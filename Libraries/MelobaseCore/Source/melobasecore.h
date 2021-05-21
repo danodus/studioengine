@@ -1,0 +1,7 @@
+#ifndef MELOBASECORE_H
+#define MELOBASECORE_H
+
+#define MELOBASECORE_VERSION        "1.4.0"
+
+#endif // MELOBASECORE_H
+
