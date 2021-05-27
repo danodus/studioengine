@@ -630,7 +630,6 @@ int main(int argc, char** argv) {
                         break;
                     }
                     case SDL_FINGERDOWN: {
-                        /*
                         MDStudio::UIEvent uiEvent{};
                         uiEvent.type = MDStudio::MOUSE_DOWN_UIEVENT;
                         uiEvent.pt.x = (event.tfinger.x * g_windowWidth) / g_scale;
@@ -638,7 +637,6 @@ int main(int argc, char** argv) {
                         uiEvent.modifierFlags = 0;
                         if (!g_topView->responderChain()->sendEvent(&uiEvent))
                             g_contentView->responderChain()->sendEvent(&uiEvent);
-                        */
                         break;
                     }
                     case SDL_MOUSEBUTTONDOWN: {
@@ -661,15 +659,13 @@ int main(int argc, char** argv) {
                         break;
                     }
                     case SDL_FINGERUP: {
-                        /*
                         MDStudio::UIEvent uiEvent{};
                         uiEvent.type = MDStudio::MOUSE_UP_UIEVENT;
                         uiEvent.pt.x = (event.tfinger.x * g_windowWidth) / g_scale;
-                        uiEvent.pt.y = (g_windowHeight - (event.tfinger.y * g_windowWidth)) / g_scale;
+                        uiEvent.pt.y = (g_windowHeight - (event.tfinger.y * g_windowHeight)) / g_scale;
                         uiEvent.modifierFlags = 0;
                         if (!g_topView->responderChain()->sendEvent(&uiEvent))
                             g_contentView->responderChain()->sendEvent(&uiEvent);
-                        */
                         break;
                     }
                     case SDL_MOUSEBUTTONUP: {
@@ -691,15 +687,13 @@ int main(int argc, char** argv) {
                         break;
                     }
                     case SDL_FINGERMOTION: {
-                        /*
                         MDStudio::UIEvent uiEvent{};
                         uiEvent.type = MDStudio::MOUSE_MOVED_UIEVENT;
                         uiEvent.pt.x = (event.tfinger.x * g_windowWidth) / g_scale;
-                        uiEvent.pt.y = (g_windowWidth - (event.tfinger.y * g_windowHeight)) / g_scale;
+                        uiEvent.pt.y = (g_windowHeight - (event.tfinger.y * g_windowHeight)) / g_scale;
                         uiEvent.modifierFlags = 0;
                         if (!g_topView->responderChain()->sendEvent(&uiEvent))
                             g_contentView->responderChain()->sendEvent(&uiEvent);
-                        */
                         break;
                     }
                     case SDL_MOUSEMOTION: {
