@@ -185,7 +185,7 @@ bool testSync() {
     sequence2->version = sequence2->date;
     sequence2->dataVersion = sequence2->date;
     date += dateDelta;
-    setEvents(sequence2.get(), 120000);
+    setEvents(sequence2.get(), 120);
     setAnnotations(sequence2.get(), 30);
 
     sequencesDB2.addSequence(sequence2);
