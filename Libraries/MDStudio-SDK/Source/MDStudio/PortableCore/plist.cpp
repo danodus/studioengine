@@ -38,6 +38,7 @@
 #include <algorithm>
 #include <list>
 #include <sstream>
+#include <cstdint>
 
 #include "base64.h"
 

@@ -20,6 +20,7 @@
 #include <fttrigon.h>
 
 #include <string>
+#include <cstdint>
 
 namespace MDStudio {
 

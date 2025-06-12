@@ -11,6 +11,7 @@
 
 #include <functional>
 #include <stack>
+#include <cstddef>
 
 namespace MDStudio {
 
