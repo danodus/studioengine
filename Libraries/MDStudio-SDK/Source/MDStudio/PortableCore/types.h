@@ -9,20 +9,11 @@
 #define NO 0
 #endif
 
-#if (TARGET_OS_IPHONE || TARGET_OS_MAC)
-
-#include <MacTypes.h>
-
-typedef Float32 GraphSampleType;
-typedef Float32 SampleType;
-
-#else
-
 #ifndef NULL
 #define NULL 0L
 #endif  // NULL
 
-typedef char SInt8;
+typedef signed char SInt8;
 typedef unsigned char UInt8;
 
 typedef short int SInt16;
@@ -38,7 +29,5 @@ typedef double Float64;
 
 typedef Float32 GraphSampleType;
 typedef Float32 SampleType;
-
-#endif
 
 #endif  // TYPES_H

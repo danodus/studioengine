@@ -256,9 +256,6 @@ bool Script::execute(std::string path, std::vector<ScriptModule*> scriptModules,
 
     lua_gc(_L, LUA_GCSTOP, 0); /* stop collector during initialization */
     luaL_openlibs(_L);         /* open libraries */
-#if TARGET_OS_MAC
-    luaopen_lfs(_L);  // Open Lua File System
-#endif
     lua_gc(_L, LUA_GCRESTART, 0);
 
     // Bind core functions
